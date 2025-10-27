@@ -1,0 +1,159 @@
+
+
+
+
+/* ---------------------------------------
+Toyota Wiring Color Code 
+------------------------------------------*/
+
+
+
+
+
+
+/* ===== Base Styles ===== */
+td, span {
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+/* ===== Table (td) Styles ===== */
+td {
+  text-align: center;
+  padding: 4px;
+  text-shadow: 0px 1px 2px #000, 0px 0px 3px #000;
+}
+
+
+
+
+
+
+/* === Single Colors === */
+td.B { background:#000; color:#000; text-shadow:0px 2px 2px #FFF, 0px 0px 5px #FFF; }
+td.BE { background:#F5F5DC; color:#F5F5DC; text-shadow:0px 2px 2px #000, 0px 0px 5px #000; }
+td.BR { background:#A52A2A; color:#A52A2A; text-shadow:0px 2px 2px #000, 0px 0px 5px #000; }
+td.G { background:#008000; color:#008000; }
+td.GR { background:#808080; color:#808080; }
+td.O { background:#FFA500; color:#FFA500; }
+td.P { background:#FFC0CB; color:#FFC0CB; }
+td.R { background:#FF0000; color:#FF0000; }
+td.SB { background:#87CEEB; color:#87CEEB; }
+td.L { background:#0000FF; color:#0000FF; text-shadow:0px 2px 2px #FFF,0px 0px 5px #FFF; }
+td.LG { background:#90EE90; color:#90EE90; }
+td.V { background:#EE82EE; color:#EE82EE; }
+td.W { background:#FFF; color:#FFF; text-shadow:2px 2px 5px #000,2px 2px 5px #000; }
+td.Y { background:#FFFF00; color:#FFFF00; }
+
+
+
+
+
+
+/* === Dual Colors === */
+td.B_G { background:#000; color:#008000; }
+td.B_L { background:#000; color:#00F; }
+td.B_R { background:#000; color:#F00; }
+td.B_O { background:#000; color:#FFA500; }
+td.B_W { background:#000; color:#FFF; }
+td.B_Y { background:#000; color:#FFFF00; }
+
+td.G_B { background:#008000; color:#000; }
+td.G_W { background:#008000; color:#FFF; }
+td.G_Y { background:#008000; color:#FFFF00; }
+
+td.GR_R { background:#808080; color:#F00; }
+
+td.L_B { background:#00F; color:#000; }
+td.L_R { background:#00F; color:#F00; }
+td.L_Y { background:#00F; color:#FF0; }
+td.L_W { background:#00F; color:#FFF; }
+
+td.LG_B { background:#90EE90; color:#000; }
+td.O_B { background:#FFA500; color:#000; }
+td.O_W { background:#FFA500; color:#FFF; }
+td.P_B { background:#FFC0CB; color:#000; }
+
+td.R_B { background:#F00; color:#000; }
+td.R_L { background:#F00; color:#00F; }
+td.R_Y { background:#F00; color:#FF0; }
+td.R_W { background:#F00; color:#FFF; }
+
+td.V_W { background:#EE82EE; color:#FFF; }
+td.W_B { background:#FFF; color:#000; }
+
+td.Y_B { background:#FF0; color:#000; }
+td.Y_G { background:#FF0; color:#008000; }
+td.Y_R { background:#FF0; color:#F00; }
+
+
+
+
+
+
+/* ===== Font (span) Styles ===== */
+span {
+  text-shadow: 0px 0px 1px #000, 0px 0px 2px #000;
+}
+
+
+
+
+
+
+/* === Single Colors === */
+span.B { color:#000; }
+span.BE { color:#F5F5DC; }
+span.BR { color:#A52A2A; text-shadow:0px 0px 1px #6E260E,0px 0px 2px #6E260E; }
+span.G { color:#008000; text-shadow:0px 0px 1px #355E3B,0px 0px 2px #355E3B; }
+span.GR { color:#808080; text-shadow:0px 0px 1px #36454F,0px 0px 2px #696969; }
+span.L { color:#00F; text-shadow:0px 0px 1px #0047AB,0px 0px 2px #0047AB; }
+span.LG { color:#90EE90; text-shadow:0px 0px 1px #4ee44e,0px 0px 2px #000; }
+span.R { color:#F00; text-shadow:0px 0px 1px #D2042D,0px 0px 2px #D2042D; }
+span.SB { color:#377E9B; }
+span.O { color:#FFA500; text-shadow:0px 0px 1px #CC7722,0px 0px 2px #CC7722; }
+span.P { color:#FFC0CB; text-shadow:0px 0px 1px #CC7722,0px 0px 2px #FAA0A0; }
+span.V { color:#EE82EE; text-shadow:0px 0px 1px #800080,0px 0px 2px #800080; }
+span.W { color:#FFF; }
+span.Y { color:#FF0; text-shadow:0px 0px 1px #DAA520,0px 0px 2px #DAA520; }
+
+
+
+
+
+/* === Dual Colors === */
+span.B_G { color:#000; text-shadow:0px 0px 1px #008000,0px 0px 2px #008000; }
+span.B_L { color:#000; text-shadow:0px 0px 1px #00F,0px 0px 2px #00F; }
+span.B_R { color:#000; text-shadow:0px 0px 1px #F00,0px 0px 2px #F00; }
+span.B_O { color:#000; text-shadow:0px 0px 1px #FFA500,0px 0px 2px #FFA500; }
+span.B_W { color:#000; text-shadow:0px 0px 1px #FFF,0px 0px 2px #000; }
+span.B_Y { color:#000; text-shadow:0px 0px 1px #FF0,0px 0px 2px #FF0; }
+
+span.G_B { color:#008000; }
+span.G_W { color:#008000; text-shadow:0px 0px 1px #FFF,0px 0px 2px #000; }
+span.G_Y { color:#008000; text-shadow:0px 0px 1px #FF0,0px 0px 2px #FF0; }
+
+span.GR_R { color:#808080; text-shadow:0px 0px 1px #F00,0px 0px 2px #F00; }
+
+span.L_B { color:#00F; }
+span.L_R { color:#00F; text-shadow:0px 0px 1px #F00,0px 0px 2px #F00; }
+span.L_Y { color:#00F; text-shadow:0px 0px 1px #FF0,0px 0px 2px #000; }
+span.L_W { color:#00F; text-shadow:0px 0px 1px #FFF,0px 0px 2px #000; }
+
+span.LG_B { color:#90EE90; }
+span.O_B { color:#FFA500; }
+span.O_W { color:#FFA500; text-shadow:0px 1px 3px #FFF,0px 0px 2px #000; }
+span.P_B { color:#FFC0CB; }
+span.R_B { color:#F00; }
+span.R_L { color:#F00; text-shadow:0px 0px 1px #00F,0px 0px 2px #00F; }
+span.R_Y { color:#F00; text-shadow:0px 0px 1px #FF0,0px 0px 2px #FF0; }
+span.R_W { color:#F00; text-shadow:0px 0px 1px #FFF,0px 0px 2px #000; }
+span.V_W { color:#EE82EE; text-shadow:0px 0px 1px #FFF,0px 0px 2px #000; }
+span.W_B { color:#FFF; }
+span.Y_B { color:#FF0; }
+span.Y_G { color:#FF0; text-shadow:0px 1px 3px #008000,0px 0px 2px #008000; }
+span.Y_R { color:#FF0; text-shadow:0px 1px 3px #F00,0px 0px 2px #F00; }
