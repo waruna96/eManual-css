@@ -1,0 +1,356 @@
+/* Toyota Prius 3rd gen Wiring Connector tabel - Optimized Readable Version */
+
+
+
+
+/* === GENERAL TABLE DEFAULTS === */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #000000;
+}
+
+td, th {
+  text-align: center;
+  padding: 8px;
+  font-family: Serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+
+
+
+/* === BLACK Table Type === */
+
+table.Black_Connection, 
+table.A2_Connection, 
+table.A4_Connection, 
+table.A18_Connection,
+table.A28_Connection, 
+table.A29_Connection, 
+table.A30_Connection, 
+table.A31_Connection,
+table.A32_Connection, 
+table.A34_Connection, 
+table.A35_Connection, 
+table.A54_Connection,
+table.A57_Connection, 
+table.A59_Connection, 
+table.D1_Connection, 
+table.D3_Connection,
+table.D4_Connection, 
+table.D5_Connection, 
+table.D6_Connection, 
+table.D8_Connection,
+table.D10_Connection, 
+table.D11_Connection, 
+table.D12_Connection, table.D13_Connection,
+table.D14_Connection, table.D16_Connection, table.D18_Connection, table.D27_Connection,
+table.D28_Connection, table.G2_Connection, table.I1_Connection, table.L12_Connection,
+table.L20_Connection, table.L33_Connection, table.L43_Connection, table.L44_Connection,
+table.L52_Connection, table.L57_Connection, table.L78_Connection, table.L87_Connection,
+table.L101_Connection, table.R6_Connection, table.W3_Connection, table.W4_Connection,
+table.W7_Connection, table.e2_Connection, table.f2_Connection, table.g1_Connection,
+table.z1_Connection, table.z2_Connection, table.z7_Connection, table.z9_Connection,
+table.z10_Connection, table.z12_Connection, table.z13_Connection {
+  font-family: arial, sans-serif;
+  color: #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Black_Connection td, .Black_Connection th,
+.A2_Connection td, .A2_Connection th,
+.A4_Connection td, .A4_Connection th,
+.A18_Connection td, .A18_Connection th,
+.A28_Connection td, .A28_Connection th,
+.A29_Connection td, .A29_Connection th,
+.A30_Connection td, .A30_Connection th,
+.A31_Connection td, .A31_Connection th,
+.A32_Connection td, .A32_Connection th,
+.A34_Connection td, .A34_Connection th,
+.A35_Connection td, .A35_Connection th,
+.A54_Connection td, .A54_Connection th,
+.A57_Connection td, .A57_Connection th,
+.A59_Connection td, .A59_Connection th,
+.D1_Connection td, .D1_Connection th,
+.D3_Connection td, .D3_Connection th,
+.D4_Connection td, .D4_Connection th,
+.D5_Connection td, .D5_Connection th,
+.D6_Connection td, .D6_Connection th,
+.D8_Connection td, .D8_Connection th,
+.D10_Connection td, .D10_Connection th,
+.D11_Connection td, .D11_Connection th,
+.D12_Connection td, .D12_Connection th,
+.D13_Connection td, .D13_Connection th,
+.D14_Connection td, .D14_Connection th,
+.D16_Connection td, .D16_Connection th,
+.D18_Connection td, .D18_Connection th,
+.D27_Connection td, .D27_Connection th,
+.D28_Connection td, .D28_Connection th,
+.G2_Connection td, .G2_Connection th,
+.I1_Connection td, .I1_Connection th,
+.L12_Connection td, .L12_Connection th,
+.L20_Connection td, .L20_Connection th,
+.L33_Connection td, .L33_Connection th,
+.L43_Connection td, .L43_Connection th,
+.L44_Connection td, .L44_Connection th,
+.L52_Connection td, .L52_Connection th,
+.L57_Connection td, .L57_Connection th,
+.L78_Connection td, .L78_Connection th,
+.L87_Connection td, .L87_Connection th,
+.L101_Connection td, .L101_Connection th,
+.R6_Connection td, .R6_Connection th,
+.W3_Connection td, .W3_Connection th,
+.W4_Connection td, .W4_Connection th,
+.W7_Connection td, .W7_Connection th,
+.e2_Connection td, .e2_Connection th,
+.f2_Connection td, .f2_Connection th,
+.g1_Connection td, .g1_Connection th,
+.z1_Connection td, .z1_Connection th,
+.z2_Connection td, .z2_Connection th,
+.z7_Connection td, .z7_Connection th,
+.z9_Connection td, .z9_Connection th,
+.z10_Connection td, .z10_Connection th,
+.z12_Connection td, .z12_Connection th,
+.z13_Connection td, .z13_Connection th {
+  border: 2px solid #1B1212;
+  text-align: center;
+  padding: 8px;
+  font-family: Serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+/* === WHITE Table Type === */
+
+table.White_Connection, table.A19_Connection, table.A20_Connection, table.A25_Connection,
+table.A26_Connection, table.A50_Connection, table.A51_Connection, table.A56_Connection,
+table.I6_Connection, table.L7_Connection, table.L8_Connection, table.L17_Connection,
+table.L18_Connection, table.L27_Connection, table.L47_Connection, table.L48_Connection,
+table.L51_Connection, table.L60_Connection, table.L61_Connection, table.L62_Connection,
+table.L63_Connection, table.L85_Connection, table.L92_Connection, table.L93_Connection,
+table.L94_Connection, table.L95_Connection, table.L103_Connection, table.M2_Connection,
+table.N3_Connection, table.O3_Connection, table.R4_Connection, table.R23_Connection,
+table.b1_Connection, table.z5_Connection, table.z6_Connection, table.z11_Connection,
+table.z14_Connection, table.z15_Connection {
+  font-family: arial, sans-serif;
+  color: #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.White_Connection td, .White_Connection th,
+.A19_Connection td, .A19_Connection th,
+.A20_Connection td, .A20_Connection th,
+.A25_Connection td, .A25_Connection th,
+.A26_Connection td, .A26_Connection th,
+.A50_Connection td, .A50_Connection th,
+.A51_Connection td, .A51_Connection th,
+.A56_Connection td, .A56_Connection th,
+.I6_Connection td, .I6_Connection th,
+.L7_Connection td, .L7_Connection th,
+.L8_Connection td, .L8_Connection th,
+.L17_Connection td, .L17_Connection th,
+.L18_Connection td, .L18_Connection th,
+.L27_Connection td, .L27_Connection th,
+.L47_Connection td, .L47_Connection th,
+.L48_Connection td, .L48_Connection th,
+.L51_Connection td, .L51_Connection th,
+.L60_Connection td, .L60_Connection th,
+.L61_Connection td, .L61_Connection th,
+.L62_Connection td, .L62_Connection th,
+.L63_Connection td, .L63_Connection th,
+.L85_Connection td, .L85_Connection th,
+.L92_Connection td, .L92_Connection th,
+.L93_Connection td, .L93_Connection th,
+.L94_Connection td, .L94_Connection th,
+.L95_Connection td, .L95_Connection th,
+.L103_Connection td, .L103_Connection th,
+.M2_Connection td, .M2_Connection th,
+.N3_Connection td, .N3_Connection th,
+.O3_Connection td, .O3_Connection th,
+.R4_Connection td, .R4_Connection th,
+.R23_Connection td, .R23_Connection th,
+.b1_Connection td, .b1_Connection th,
+.z5_Connection td, .z5_Connection th,
+.z6_Connection td, .z6_Connection th,
+.z11_Connection td, .z11_Connection th,
+.z14_Connection td, .z14_Connection th,
+.z15_Connection td, .z15_Connection th {
+  border: 1px solid #EDEADE;
+  text-align: center;
+  padding: 8px;
+  font-family: Serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/* === GRAY Table Type === */
+
+table.Gray_Connection, table.A17_Connection, table.A21_Connection, table.A22_Connection,
+table.A58_Connection, table.D7_Connection, table.D9_Connection, table.D15_Connection,
+table.D17_Connection, table.D25_Connection, table.D26_Connection, table.L5_Connection,
+table.L6_Connection, table.S16_Connection, table.W1_Connection, table.W2_Connection,
+table.W5_Connection, table.W6_Connection, table.z3_Connection, table.z4_Connection {
+  font-family: arial, sans-serif;
+  color: #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Gray_Connection td, .Gray_Connection th,
+.A17_Connection td, .A17_Connection th,
+.A21_Connection td, .A21_Connection th,
+.A22_Connection td, .A22_Connection th,
+.A58_Connection td, .A58_Connection th,
+.D7_Connection td, .D7_Connection th,
+.D9_Connection td, .D9_Connection th,
+.D15_Connection td, .D15_Connection th,
+.D17_Connection td, .D17_Connection th,
+.D25_Connection td, .D25_Connection th,
+.D26_Connection td, .D26_Connection th,
+.L5_Connection td, .L5_Connection th,
+.L6_Connection td, .L6_Connection th,
+.S16_Connection td, .S16_Connection th,
+.W1_Connection td, .W1_Connection th,
+.W2_Connection td, .W2_Connection th,
+.W5_Connection td, .W5_Connection th,
+.W6_Connection td, .W6_Connection th,
+.z3_Connection td, .z3_Connection th,
+.z4_Connection td, .z4_Connection th {
+  border: 2px solid #71797E;
+  text-align: center;
+  padding: 8px;
+  font-family: Serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+/* === YELLOW Table Type === */
+
+table.Yellow_Connection, table.L16_Connection, table.L53_Connection,
+table.R1_Connection, table.S1_Connection {
+  font-family: arial, sans-serif;
+  color: #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Yellow_Connection td, .Yellow_Connection th,
+.L16_Connection td, .L16_Connection th,
+.L53_Connection td, .L53_Connection th,
+.R1_Connection td, .R1_Connection th,
+.S1_Connection td, .S1_Connection th {
+  border: 2px solid #FFD700;
+  text-align: center;
+  padding: 8px;
+  font-family: Serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+/* === BLUE Table Type === */
+
+table.Blue_Connection, table.L46_Connection, table.L55_Connection {
+  font-family: arial, sans-serif;
+  color: #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Blue_Connection td, .Blue_Connection th,
+.L46_Connection td, .L46_Connection th,
+.L55_Connection td, .L55_Connection th {
+  border: 2px solid #00008B;
+  text-align: center;
+  padding: 8px;
+  font-family: Serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+/* === ORANGE Table Type === */
+
+table.Orange_Connection, table.E1_Connection, table.z8_Connection {
+  font-family: arial, sans-serif;
+  color: #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Orange_Connection td, .Orange_Connection th,
+.E1_Connection td, .E1_Connection th,
+.z8_Connection td, .z8_Connection th {
+  border: 2px solid #FF7518;
+  text-align: center;
+  padding: 8px;
+  font-family: Serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+/* === DARK GRAY Table Type === */
+
+table.DarkGray_Connection, table.D24_Connection, table.R11_Connection {
+  font-family: arial, sans-serif;
+  color: #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.DarkGray_Connection td, .DarkGray_Connection th,
+.D24_Connection td, .D24_Connection th,
+.R11_Connection td, .R11_Connection th {
+  border: 2px solid #A9A9A9;
+  text-align: center;
+  padding: 8px;
+  font-family: Serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+
+
+
