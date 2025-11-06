@@ -2,64 +2,355 @@
 
 /* Toyota Prius 3rd Gen Wiring Connector Table - Cleaned & Scoped Version */
 
-/* === GENERAL TABLE DEFAULTS === */ .wiring_table table { border-collapse: collapse; width: 100%; color: #000; }
+/* ================================================
+   Toyota Prius 3rd Gen Wiring Connector Tables
+   Final Cleaned + Scoped + Border-Fixed Version
+   ================================================ */
 
-.wiring_table td, .wiring_table th { text-align: center; padding: 8px; font-family: Serif; font-size: 14px; font-weight: 700; }
+/* ===== Base Table Setup ===== */
+.wiring_table table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-/* === BLACK Table Type === */ .wiring_table table.Black_Connection, .wiring_table table.A2_Connection, .wiring_table table.A4_Connection, .wiring_table table.A18_Connection, .wiring_table table.A28_Connection, .wiring_table table.A29_Connection, .wiring_table table.A30_Connection, .wiring_table table.A31_Connection, .wiring_table table.A32_Connection, .wiring_table table.A34_Connection, .wiring_table table.A35_Connection, .wiring_table table.A54_Connection, .wiring_table table.A57_Connection, .wiring_table table.A59_Connection, .wiring_table table.D1_Connection, .wiring_table table.D3_Connection, .wiring_table table.D4_Connection, .wiring_table table.D5_Connection, .wiring_table table.D6_Connection, .wiring_table table.D8_Connection, .wiring_table table.D10_Connection, .wiring_table table.D11_Connection, .wiring_table table.D12_Connection, .wiring_table table.D13_Connection, .wiring_table table.D14_Connection, .wiring_table table.D16_Connection, .wiring_table table.D18_Connection, .wiring_table table.D27_Connection, .wiring_table table.D28_Connection, .wiring_table table.G2_Connection, .wiring_table table.I1_Connection, .wiring_table table.L12_Connection, .wiring_table table.L20_Connection, .wiring_table table.L33_Connection, .wiring_table table.L43_Connection, .wiring_table table.L44_Connection, .wiring_table table.L52_Connection, .wiring_table table.L57_Connection, .wiring_table table.L78_Connection, .wiring_table table.L87_Connection, .wiring_table table.L101_Connection, .wiring_table table.R6_Connection, .wiring_table table.W3_Connection, .wiring_table table.W4_Connection, .wiring_table table.W7_Connection, .wiring_table table.e2_Connection, .wiring_table table.f2_Connection, .wiring_table table.g1_Connection, .wiring_table table.z1_Connection, .wiring_table table.z2_Connection, .wiring_table table.z7_Connection, .wiring_table table.z9_Connection, .wiring_table table.z10_Connection, .wiring_table table.z12_Connection, .wiring_table table.z13_Connection { border: 2px solid #1B1212; }
-
-.wiring_table .Black_Connection td, .wiring_table .Black_Connection th, .wiring_table .A28_Connection td, .wiring_table .A28_Connection th { border: 2px solid #1B1212; }
-
-/* === WHITE Table Type === */ .wiring_table table.White_Connection, .wiring_table table.A19_Connection, .wiring_table table.A20_Connection, .wiring_table table.A25_Connection, .wiring_table table.A26_Connection, .wiring_table table.A50_Connection, .wiring_table table.A51_Connection, .wiring_table table.A56_Connection, .wiring_table table.I6_Connection, .wiring_table table.L7_Connection, .wiring_table table.L8_Connection, .wiring_table table.L17_Connection, .wiring_table table.L18_Connection, .wiring_table table.L27_Connection, .wiring_table table.L47_Connection, .wiring_table table.L48_Connection, .wiring_table table.L51_Connection, .wiring_table table.L60_Connection, .wiring_table table.L61_Connection, .wiring_table table.L62_Connection, .wiring_table table.L63_Connection, .wiring_table table.L85_Connection, .wiring_table table.L92_Connection, .wiring_table table.L93_Connection, .wiring_table table.L94_Connection, .wiring_table table.L95_Connection, .wiring_table table.L103_Connection, .wiring_table table.M2_Connection, .wiring_table table.N3_Connection, .wiring_table table.O3_Connection, .wiring_table table.R4_Connection, .wiring_table table.R23_Connection, .wiring_table table.b1_Connection, .wiring_table table.z5_Connection, .wiring_table table.z6_Connection, .wiring_table table.z11_Connection, .wiring_table table.z14_Connection, .wiring_table table.z15_Connection { border: 1px solid #EDEADE; }
-
-/* === GRAY Table Type === */ .wiring_table table.Gray_Connection, .wiring_table table.A17_Connection, .wiring_table table.A21_Connection, .wiring_table table.A22_Connection, .wiring_table table.A58_Connection, .wiring_table table.D7_Connection, .wiring_table table.D9_Connection, .wiring_table table.D15_Connection, .wiring_table table.D17_Connection, .wiring_table table.D25_Connection, .wiring_table table.D26_Connection, .wiring_table table.L5_Connection, .wiring_table table.L6_Connection, .wiring_table table.S16_Connection, .wiring_table table.W1_Connection, .wiring_table table.W2_Connection, .wiring_table table.W5_Connection, .wiring_table table.W6_Connection, .wiring_table table.z3_Connection, .wiring_table table.z4_Connection { border: 2px solid #71797E; }
-
-/* === YELLOW Table Type === */ .wiring_table table.Yellow_Connection, .wiring_table table.L16_Connection, .wiring_table table.L53_Connection, .wiring_table table.R1_Connection, .wiring_table table.S1_Connection { border: 2px solid #FFD700; }
-
-/* === BLUE Table Type === */ .wiring_table table.Blue_Connection, .wiring_table table.L46_Connection, .wiring_table table.L55_Connection { border: 2px solid #00008B; }
-
-/* === ORANGE Table Type === */ .wiring_table table.Orange_Connection, .wiring_table table.E1_Connection, .wiring_table table.z8_Connection { border: 2px solid #FF7518; }
-
-/* === DARK GRAY Table Type === */ .wiring_table table.DarkGray_Connection, .wiring_table table.D24_Connection, .wiring_table table.R11_Connection { border: 2px solid #A9A9A9; }
-
-
-
-
-/* === Responsive Adjustments === */ @media (max-width: 600px) { .wiring_table th, .wiring_table td { padding: 5px; font-size: 12px; } }
-
+/* ===== Header & Cell Styling ===== */
+.wiring_table th,
+.wiring_table td {
+  padding: 8px;
+  text-align: center;
+}
 
 
-/* ===== Responsive Fix for Wiring Tables (Mobile) ===== */
-@media (max-width: 768px) {
-    
-    
-    .wiring_table {
+
+/* ===== Base Styles ===== */ .wiring_table td, .wiring_table span { font-family: Geneva, Verdana, sans-serif;
+  text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000;}
+
+
+
+
+
+/* ===== Table (td) Styles.wiring_table td { text-align: center; padding: 4px; } ===== */ 
+
+
+
+
+
+
+/* =====================================================
+   General Appearance & Responsive Scaling
+   ===================================================== */
+.wiring_table th {
+  background-color: #ECECEC;
+  
+  text-transform: uppercase;
+}
+
+.wiring_table tr:hover {
+  background-color: #f8f8f8;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.wiring_table caption {
+  caption-side: top;
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.wiring_table {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .wiring_table table {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  transform: scale(0.98);  /* slight shrink for mobile */
-  
-  transform-origin: top left;      /* 🔹 align scaling nicely */
+  transform: scale(0.98);
+  transform-origin: top;
 }
+
+
+/* ==========================================================
+   TOYOTA PRIUS 3rd GEN - CONNECTOR TABLE STYLES (SCOPED)
+   Optimized per-table td/th selectors
+   ========================================================== */
+
+/* ===========================
+   1️⃣ BLACK TABLE TYPE
+   =========================== */
+.wiring_table {
+  table.Black_Connection,
+  table.A2_Connection, table.A4_Connection, table.A18_Connection, table.A28_Connection,
+  table.A29_Connection, table.A30_Connection, table.A31_Connection, table.A32_Connection,
+  table.A34_Connection, table.A35_Connection, table.A54_Connection, table.A57_Connection,
+  table.A59_Connection, table.D1_Connection, table.D3_Connection, table.D4_Connection,
+  table.D5_Connection, table.D6_Connection, table.D8_Connection, table.D10_Connection,
+  table.D11_Connection, table.D12_Connection, table.D13_Connection, table.D14_Connection,
+  table.D16_Connection, table.D18_Connection, table.D27_Connection, table.D28_Connection,
+  table.G2_Connection, table.I1_Connection, table.L12_Connection, table.L20_Connection,
+  table.L33_Connection, table.L43_Connection, table.L44_Connection, table.L52_Connection,
+  table.L57_Connection, table.L78_Connection, table.L87_Connection, table.L101_Connection,
+  table.R6_Connection, table.W3_Connection, table.W4_Connection, table.W7_Connection,
+  table.e2_Connection, table.f2_Connection, table.g1_Connection,
+  table.z1_Connection, table.z2_Connection, table.z7_Connection,
+  table.z9_Connection, table.z10_Connection, table.z12_Connection, table.z13_Connection {
+    border: 1px solid #1B1212;
+    border-collapse: collapse;
+    background-color: #D9D9D9;
+    color: #000000;            /*  */
+    font-weight: 600;
     
+  }
+
+  /* inner td/th borders for every black-type table */
+  table.Black_Connection td, table.Black_Connection th,
+  table.A2_Connection td, table.A2_Connection th,
+  table.A4_Connection td, table.A4_Connection th,
+  table.A18_Connection td, table.A18_Connection th,
+  table.A28_Connection td, table.A28_Connection th,
+  table.A29_Connection td, table.A29_Connection th,
+  table.A30_Connection td, table.A30_Connection th,
+  table.A31_Connection td, table.A31_Connection th,
+  table.A32_Connection td, table.A32_Connection th,
+  table.A34_Connection td, table.A34_Connection th,
+  table.A35_Connection td, table.A35_Connection th,
+  table.A54_Connection td, table.A54_Connection th,
+  table.A57_Connection td, table.A57_Connection th,
+  table.A59_Connection td, table.A59_Connection th,
+  table.D1_Connection td, table.D1_Connection th,
+  table.D3_Connection td, table.D3_Connection th,
+  table.D4_Connection td, table.D4_Connection th,
+  table.D5_Connection td, table.D5_Connection th,
+  table.D6_Connection td, table.D6_Connection th,
+  table.D8_Connection td, table.D8_Connection th,
+  table.D10_Connection td, table.D10_Connection th,
+  table.D11_Connection td, table.D11_Connection th,
+  table.D12_Connection td, table.D12_Connection th,
+  table.D13_Connection td, table.D13_Connection th,
+  table.D14_Connection td, table.D14_Connection th,
+  table.D16_Connection td, table.D16_Connection th,
+  table.D18_Connection td, table.D18_Connection th,
+  table.D27_Connection td, table.D27_Connection th,
+  table.D28_Connection td, table.D28_Connection th,
+  table.G2_Connection td, table.G2_Connection th,
+  table.I1_Connection td, table.I1_Connection th,
+  table.L12_Connection td, table.L12_Connection th,
+  table.L20_Connection td, table.L20_Connection th,
+  table.L33_Connection td, table.L33_Connection th,
+  table.L43_Connection td, table.L43_Connection th,
+  table.L44_Connection td, table.L44_Connection th,
+  table.L52_Connection td, table.L52_Connection th,
+  table.L57_Connection td, table.L57_Connection th,
+  table.L78_Connection td, table.L78_Connection th,
+  table.L87_Connection td, table.L87_Connection th,
+  table.L101_Connection td, table.L101_Connection th,
+  table.R6_Connection td, table.R6_Connection th,
+  table.W3_Connection td, table.W3_Connection th,
+  table.W4_Connection td, table.W4_Connection th,
+  table.W7_Connection td, table.W7_Connection th,
+  table.e2_Connection td, table.e2_Connection th,
+  table.f2_Connection td, table.f2_Connection th,
+  table.g1_Connection td, table.g1_Connection th,
+  table.z1_Connection td, table.z1_Connection th,
+  table.z2_Connection td, table.z2_Connection th,
+  table.z7_Connection td, table.z7_Connection th,
+  table.z9_Connection td, table.z9_Connection th,
+  table.z10_Connection td, table.z10_Connection th,
+  table.z12_Connection td, table.z12_Connection th,
+  table.z13_Connection td, table.z13_Connection th {
+    border: 2px solid #1B1212;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================
+   2️⃣ WHITE TABLE TYPE
+   =========================== */
+.wiring_table {
+  table.White_Connection,
+  table.A19_Connection, table.A20_Connection, table.A25_Connection, table.A26_Connection,
+  table.A50_Connection, table.A51_Connection, table.A56_Connection, table.I6_Connection,
+  table.L7_Connection, table.L8_Connection, table.L17_Connection, table.L18_Connection,
+  table.L27_Connection, table.L47_Connection, table.L48_Connection, table.L51_Connection,
+  table.L60_Connection, table.L61_Connection, table.L62_Connection, table.L63_Connection,
+  table.L85_Connection, table.L92_Connection, table.L93_Connection, table.L94_Connection,
+  table.L95_Connection, table.L103_Connection, table.M2_Connection, table.N3_Connection,
+  table.O3_Connection, table.R4_Connection, table.R23_Connection, table.b1_Connection,
+  table.z5_Connection, table.z6_Connection, table.z11_Connection,
+  table.z14_Connection, table.z15_Connection {
+    border: 2px solid #EDEADE;
+    background-color: #D9D9D9;
+    color: #EDEADE;            /* */
+  font-weight: 600;
+    
+  }
+
+  table.White_Connection td, table.White_Connection th,
+  table.A19_Connection td, table.A19_Connection th,
+  table.A20_Connection td, table.A20_Connection th,
+  table.A25_Connection td, table.A25_Connection th,
+  table.A26_Connection td, table.A26_Connection th,
+  table.A50_Connection td, table.A50_Connection th,
+  table.A51_Connection td, table.A51_Connection th,
+  table.A56_Connection td, table.A56_Connection th,
+  table.I6_Connection td, table.I6_Connection th,
+  table.L7_Connection td, table.L7_Connection th,
+  table.L8_Connection td, table.L8_Connection th,
+  table.L17_Connection td, table.L17_Connection th,
+  table.L18_Connection td, table.L18_Connection th {
+    border: 2px solid #EDEADE;
+    
+  }
+}
+
+
+
+
+
+
+/* ===========================
+   3️⃣ GRAY TABLE TYPE
+   =========================== */
+.wiring_table {
+  table.Gray_Connection,
+  table.A17_Connection, table.A21_Connection, table.A22_Connection, table.A58_Connection,
+  table.D7_Connection, table.D9_Connection, table.D15_Connection, table.D17_Connection,
+  table.D25_Connection, table.D26_Connection, table.L5_Connection, table.L6_Connection,
+  table.S16_Connection, table.W1_Connection, table.W2_Connection, table.W5_Connection,
+  table.W6_Connection, table.z3_Connection, table.z4_Connection {
+    border: 2px solid #71797E;
+    background-color: #D9D9D9;
+    color: #71797E;            /* */
+  font-weight: 600;
+    
+  }
+
+  table.Gray_Connection td, table.Gray_Connection th,
+  table.A17_Connection td, table.A17_Connection th,
+  table.A21_Connection td, table.A21_Connection th,
+  table.A22_Connection td, table.A22_Connection th,
+  table.A58_Connection td, table.A58_Connection th,
+  table.D7_Connection td, table.D7_Connection th,
+  table.D9_Connection td, table.D9_Connection th,
+  table.D15_Connection td, table.D15_Connection th,
+  table.D17_Connection td, table.D17_Connection th,
+  table.D25_Connection td, table.D25_Connection th,
+  table.D26_Connection td, table.D26_Connection th,
+  table.L5_Connection td, table.L5_Connection th,
+  table.L6_Connection td, table.L6_Connection th,
+  table.S16_Connection td, table.S16_Connection th,
+  table.W1_Connection td, table.W1_Connection th,
+  table.W2_Connection td, table.W2_Connection th,
+  table.W5_Connection td, table.W5_Connection th,
+  table.W6_Connection td, table.W6_Connection th,
+  table.z3_Connection td, table.z3_Connection th,
+  table.z4_Connection td, table.z4_Connection th {
+    border: 2px solid #71797E;
+    
+  }
+}
+
+
+/* ===========================
+   4️⃣ YELLOW TABLE TYPE
+   =========================== */
+.wiring_table {
+  table.Yellow_Connection,
+  table.L16_Connection, table.L53_Connection, table.R1_Connection, table.S1_Connection {
+    border: 2px solid #FFD700;
+    background-color: #D9D9D9;
+    color: #FFD700;            /* dark golden text */
+  font-weight: 600;
+    
+    
+  }
+
+  table.Yellow_Connection td, table.Yellow_Connection th,
+  table.L16_Connection td, table.L16_Connection th,
+  table.L53_Connection td, table.L53_Connection th,
+  table.R1_Connection td, table.R1_Connection th,
+  table.S1_Connection td, table.S1_Connection th {
+    border: 2px solid #FFD700;
+    
+    
+  }
+}
+
+/* ===========================
+   5️⃣ BLUE TABLE TYPE
+   =========================== */
+.wiring_table {
+  table.Blue_Connection,
+  table.L46_Connection, table.L55_Connection {
+    border: 2px solid #00008B;
+    background-color: #E6EFFF;
+        font-weight: 600;
+        color: #00008B;      
+  }
+
+  table.Blue_Connection td, table.Blue_Connection th,
+  table.L46_Connection td, table.L46_Connection th,
+  table.L55_Connection td, table.L55_Connection th {
+    border: 2px solid #00008B;
+  }
+}
+
+/* ===========================
+   6️⃣ ORANGE TABLE TYPE
+   =========================== */
+.wiring_table {
+  table.Orange_Connection,
+  table.E1_Connection, table.z8_Connection {
+    border: 2px solid #FF7518;
+    background-color: #FFF1E6;
+        font-weight: 600;
+        color: #FF7518;      
+  }
+
+  table.Orange_Connection td, table.Orange_Connection th,
+  table.E1_Connection td, table.E1_Connection th,
+  table.z8_Connection td, table.z8_Connection th {
+    border: 2px solid #FF7518;
+    
+  }
+}
+
+/* ===========================
+   7️⃣ DARK GRAY TABLE TYPE
+   =========================== */
+.wiring_table {
+  table.DarkGray_Connection,
+  table.D24_Connection, table.R11_Connection {
+    border: 2px solid #A9A9A9;
+    background-color: #E0E0E0;
+        font-weight: 600;
+        color: #A9A9A9;            /* */
   
+    
+  }
 
-.wiring_table th, .wiring_table td { white-space: nowrap; padding: 5px 10px; font-size: 12px; }
-
-.wiring_table td.wrap { white-space: normal; }
-
-.wiring_table table::-webkit-scrollbar { height: 6px; }
-
-.wiring_table table::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 3px; } }
-
-
-
+  table.DarkGray_Connection td, table.DarkGray_Connection th,
+  table.D24_Connection td, table.D24_Connection th,
+  table.R11_Connection td, table.R11_Connection th {
+    border: 2px solid #A9A9A9;
+  }
+}
 
 
 
@@ -68,19 +359,79 @@
 
 /* --------------------------------------- Toyota Wiring Color Code - Cleaned & Scoped Version ------------------------------------------*/
 
-/* ===== Base Styles ===== */ .wiring_table td, .wiring_table span { font-family: Geneva, Verdana, sans-serif; }
 
-/* ===== Table (td) Styles ===== */ .wiring_table td { text-align: center; padding: 4px; text-shadow: 0px 1px 2px #000, 0px 0px 3px #000; }
+/* ====== Single Colors ====== */
+td.B  { background:#000000; color:#000000; text-shadow:0px 2px 2px #FFFFFF,0px 0px 5px #FFFFFF; }
+td.BE { background:#F5F5DC; color:#F5F5DC; }
+td.BR { background:#A52A2A; color:#A52A2A; }
+td.G  { background:#008000; color:#008000; }
+td.GR { background:#808080; color:#808080; }
+td.O  { background:#FFA500; color:#FFA500; }
+td.P  { background:#FFC0CB; color:#FFC0CB; }
+td.R  { background:#FF0000; color:#FF0000; }
+td.SB { background:#87CEEB; color:#87CEEB; }
+td.L  { background:#0000FF; color:#0000FF; text-shadow:0px 2px 2px #FFFFFF,0px 0px 5px #FFFFFF; }
+td.LG { background:#90EE90; color:#90EE90; }
+td.V  { background:#EE82EE; color:#EE82EE; }
+td.W  { background:#FFFFFF; color:#FFFFFF; text-shadow:2px 2px 5px #000000,2px 2px 5px #000000; }
+td.Y  { background:#FFFF00; color:#FFFF00; }
 
-/* === Single Colors === */ .wiring_table td.B { background:#000; color:#000; text-shadow:0px 2px 2px #FFF, 0px 0px 5px #FFF; } .wiring_table td.BE { background:#F5F5DC; color:#F5F5DC; text-shadow:0px 2px 2px #000, 0px 0px 5px #000; } .wiring_table td.BR { background:#A52A2A; color:#A52A2A; text-shadow:0px 2px 2px #000, 0px 0px 5px #000; } .wiring_table td.G { background:#008000; color:#008000; } .wiring_table td.GR { background:#808080; color:#808080; } .wiring_table td.O { background:#FFA500; color:#FFA500; } .wiring_table td.P { background:#FFC0CB; color:#FFC0CB; } .wiring_table td.R { background:#FF0000; color:#FF0000; } .wiring_table td.SB { background:#87CEEB; color:#87CEEB; } .wiring_table td.L { background:#0000FF; color:#0000FF; text-shadow:0px 2px 2px #FFF,0px 0px 5px #FFF; } .wiring_table td.LG { background:#90EE90; color:#90EE90; } .wiring_table td.V { background:#EE82EE; color:#EE82EE; } .wiring_table td.W { background:#FFF; color:#FFF; text-shadow:2px 2px 5px #000,2px 2px 5px #000; } .wiring_table td.Y { background:#FFFF00; color:#FFFF00; }
+/* ====== Dual Colors ====== */
+td.B_G { background:#000000; color:#008000; }
+td.B_L { background:#000000; color:#0000FF; }
+td.B_R { background:#000000; color:#FF0000; }
+td.B_O { background:#000000; color:#FFA500; }
+td.B_W { background:#000000; color:#FFFFFF; }
+td.B_Y { background:#000000; color:#FFFF00; }
 
-/* === Dual Colors === */ .wiring_table td.B_G { background:#000; color:#008000; } .wiring_table td.B_L { background:#000; color:#00F; } .wiring_table td.B_R { background:#000; color:#F00; } .wiring_table td.B_O { background:#000; color:#FFA500; } .wiring_table td.B_W { background:#000; color:#FFF; } .wiring_table td.B_Y { background:#000; color:#FFFF00; } .wiring_table td.G_B { background:#008000; color:#000; } .wiring_table td.G_W { background:#008000; color:#FFF; } .wiring_table td.G_Y { background:#008000; color:#FFFF00; } .wiring_table td.GR_R { background:#808080; color:#F00; } .wiring_table td.L_B { background:#00F; color:#000; } .wiring_table td.L_R { background:#00F; color:#F00; } .wiring_table td.L_Y { background:#00F; color:#FF0; } .wiring_table td.L_W { background:#00F; color:#FFF; } .wiring_table td.LG_B { background:#90EE90; color:#000; } .wiring_table td.O_B { background:#FFA500; color:#000; } .wiring_table td.O_W { background:#FFA500; color:#FFF; } .wiring_table td.P_B { background:#FFC0CB; color:#000; } .wiring_table td.R_B { background:#F00; color:#000; } .wiring_table td.R_L { background:#F00; color:#00F; } .wiring_table td.R_Y { background:#F00; color:#FF0; } .wiring_table td.R_W { background:#F00; color:#FFF; } .wiring_table td.V_W { background:#EE82EE; color:#FFF; } .wiring_table td.W_B { background:#FFF; color:#000; } .wiring_table td.Y_B { background:#FF0; color:#000; } .wiring_table td.Y_G { background:#FF0; color:#008000; } .wiring_table td.Y_R { background:#FF0; color:#F00; }
+td.G_B { background:#008000; color:#000000; }
+td.G_W { background:#008000; color:#FFFFFF; }
+td.G_Y { background:#008000; color:#FFFF00; }
+
+td.GR_R { background:#808080; color:#FF0000; }
+
+td.L_B { background:#0000FF; color:#000000; }
+td.L_R { background:#0000FF; color:#FF0000; }
+td.L_Y { background:#0000FF; color:#FFFF00; }
+td.L_W { background:#0000FF; color:#FFFFFF; }
+
+td.LG_B { background:#90EE90; color:#000000; }
+
+td.O_B { background:#FFA500; color:#000000; }
+td.O_W { background:#FFA500; color:#FFFFFF; }
+
+td.P_B { background:#FFC0CB; color:#000000; }
+
+td.R_B { background:#FF0000; color:#000000; }
+td.R_L { background:#FF0000; color:#0000FF; }
+td.R_Y { background:#FF0000; color:#FFFF00; }
+td.R_W { background:#FF0000; color:#FFFFFF; }
+
+td.V_W { background:#EE82EE; color:#FFFFFF; }
+
+td.W_B { background:#FFFFFF; color:#000000; }
+
+td.Y_B { background:#FFFF00; color:#000000; }
+td.Y_G { background:#FFFF00; color:#008000; }
+td.Y_R { background:#FFFF00; color:#FF0000; }
+
+
+
+
+
+
+
 
 /* ===== Font (span) Styles ===== */ .wiring_table span { text-shadow: 0px 0px 1px #000, 0px 0px 2px #000; }
 
 /* === Single Colors (Span) === */ .wiring_table span.B { color:#000; } .wiring_table span.BE { color:#F5F5DC; } .wiring_table span.BR { color:#A52A2A; text-shadow:0px 0px 1px #6E260E,0px 0px 2px #6E260E; } .wiring_table span.G { color:#008000; text-shadow:0px 0px 1px #355E3B,0px 0px 2px #355E3B; } .wiring_table span.GR { color:#808080; text-shadow:0px 0px 1px #36454F,0px 0px 2px #696969; } .wiring_table span.L { color:#00F; text-shadow:0px 0px 1px #0047AB,0px 0px 2px #0047AB; } .wiring_table span.LG { color:#90EE90; text-shadow:0px 0px 1px #4ee44e,0px 0px 2px #000; } .wiring_table span.R { color:#F00; text-shadow:0px 0px 1px #D2042D,0px 0px 2px #D2042D; } .wiring_table span.SB { color:#377E9B; } .wiring_table span.O { color:#FFA500; text-shadow:0px 0px 1px #CC7722,0px 0px 2px #CC7722; } .wiring_table span.P { color:#FFC0CB; text-shadow:0px 0px 1px #CC7722,0px 0px 2px #FAA0A0; } .wiring_table span.V { color:#EE82EE; text-shadow:0px 0px 1px #800080,0px 0px 2px #800080; } .wiring_table span.W { color:#FFF; } .wiring_table span.Y { color:#FF0; text-shadow:0px 0px 1px #DAA520,0px 0px 2px #DAA520; }
 
 /* === Dual Colors (Span) === */ .wiring_table span.B_G { color:#000; text-shadow:0px 0px 1px #008000,0px 0px 2px #008000; } .wiring_table span.B_L { color:#000; text-shadow:0px 0px 1px #00F,0px 0px 2px #00F; } .wiring_table span.B_R { color:#000; text-shadow:0px 0px 1px #F00,0px 0px 2px #F00; } .wiring_table span.B_O { color:#000; text-shadow:0px 0px 1px #FFA500,0px 0px 2px #FFA500; } .wiring_table span.B_W { color:#000; text-shadow:0px 0px 1px #FFF,0px 0px 2px #000; } .wiring_table span.B_Y { color:#000; text-shadow:0px 0px 1px #FF0,0px 0px 2px #FF0; } .wiring_table span.G_B { color:#008000; } .wiring_table span.G_W { color:#008000; text-shadow:0px 0px 1px #FFF,0px 0px 2px #000; } .wiring_table span.G_Y { color:#008000; text-shadow:0px 0px 1px #FF0,0px 0px 2px #FF0; } .wiring_table span.GR_R { color:#808080; text-shadow:0px 0px 1px #F00,0px 0px 2px #F00; } .wiring_table span.L_B { color:#00F; } .wiring_table span.L_R { color:#00F; text-shadow:0px 0px 1px #F00,0px 0px 2px #F00; } .wiring_table span.L_Y { color:#00F; text-shadow:0px 0px 1px #FF0,0px 0px 2px #000; } .wiring_table span.L_W { color:#00F; text-shadow:0px 0px 1px #FFF,0px 0px 2px #000; } .wiring_table span.LG_B { color:#90EE90; } .wiring_table span.O_B { color:#FFA500; } .wiring_table span.O_W { color:#FFA500; text-shadow:0px 1px 3px #FFF,0px 0px 2px #000; } .wiring_table span.P_B { color:#FFC0CB; } .wiring_table span.R_B { color:#F00; } .wiring_table span.R_L { color:#F00; text-shadow:0px 0px 1px #00F,0px 0px 2px #00F; } .wiring_table span.R_Y { color:#F00; text-shadow:0px 0px 1px #FF0,0px 0px 2px #FF0; } .wiring_table span.R_W { color:#F00; text-shadow:0px 0px 1px #FFF,0px 0px 2px #000; } .wiring_table span.V_W { color:#EE82EE; text-shadow:0px 0px 1px #FFF,0px 0px 2px #000; } .wiring_table span.W_B { color:#FFF; } .wiring_table span.Y_B { color:#FF0; } .wiring_table span.Y_G { color:#FF0; text-shadow:0px 1px 3px #008000,0px 0px 2px #008000; } .wiring_table span.Y_R { color:#FF0; text-shadow:0px 1px 3px #F00,0px 0px 2px #F00; }
+
+
+
+
+
 
 
 
@@ -325,12 +676,12 @@ font-size: 7px;
 
 
 
+/* ======================================
+   Toyota Wiring Button Styles - Cleaned & Scoped Version
+   ====================================== */
 
-
-
-/* ---- Toyota Wiring Button Styles ---- */
-
-.button{
+/* ---- Base Button Style ---- */
+.wiring_table .button {
   border: none;
   padding: 12px 28px;
   text-align: center;
@@ -343,24 +694,53 @@ font-size: 7px;
   border-radius: 6px;
   background-color: #f5f5f5;
   color: #333;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-} .wiring_table /* Color Variants */
-.button_BR{ color: #A52A2A; } .wiring_table /* Brown */
-.button_GR{ color: #808080; } .wiring_table /* Gray */
-.button_B{ color: #000000; } .wiring_table /* Black */
-.button_W{ color: #FFFFFF; background-color: #333; } .wiring_table /* White */
-.button_O{ color: #FFA500; } .wiring_table /* Orange */
-.button_L{ color: #0000FF; } .wiring_table /* Blue */
-.button_Y{ color: #B59E00; } .wiring_table /* Yellow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
 
-/* Hover Effects */
-.button_BR:hover{ background-color: #A52A2A; color: #fff; } .wiring_table .button_GR:hover{ background-color: #808080; color: #fff; } .wiring_table .button_B:hover{ background-color: #000000; color: #fff; } .wiring_table .button_W:hover{ background-color: #f5f5f5; color: #333; } .wiring_table .button_O:hover{ background-color: #FFA500; color: #fff; } .wiring_table .button_L:hover{ background-color: #0000FF; color: #fff; } .wiring_table .button_Y:hover{ background-color: #FFFF00; color: #333; } .wiring_table 
+/* ---- Color Variants ---- */
+.wiring_table .button_BR { color: #A52A2A; }    /* Brown */
+.wiring_table .button_GR { color: #808080; }    /* Gray */
+.wiring_table .button_B  { color: #000000; }    /* Black */
+.wiring_table .button_W  { color: #FFFFFF; background-color: #333; }  /* White */
+.wiring_table .button_O  { color: #FFA500; }    /* Orange */
+.wiring_table .button_L  { color: #0000FF; }    /* Blue */
+.wiring_table .button_Y  { color: #B59E00; }    /* Yellow */
 
+/* ---- Hover Effects ---- */
+.wiring_table .button_BR:hover {
+  background-color: #A52A2A;
+  color: #fff;
+}
 
+.wiring_table .button_GR:hover {
+  background-color: #808080;
+  color: #fff;
+}
 
+.wiring_table .button_B:hover {
+  background-color: #000000;
+  color: #fff;
+}
 
+.wiring_table .button_W:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
 
+.wiring_table .button_O:hover {
+  background-color: #FFA500;
+  color: #fff;
+}
 
+.wiring_table .button_L:hover {
+  background-color: #0000FF;
+  color: #fff;
+}
+
+.wiring_table .button_Y:hover {
+  background-color: #FFFF00;
+  color: #333;
+}
 
 
 
@@ -370,7 +750,7 @@ font-size: 7px;
 
 /* ===== Toyota Prius 3rd Gen Connector Color Code (Optimized Readable) ===== */
 
-span.A15, span.A18, span.A2, span.A28, span.A29, span.A30, span.A32, span.A34, span.A35, span.A53, span.A54, span.A55, span.A57, span.D1, span.D10, span.D11, span.D12, span.D13, span.D14, span.D16, span.D18, span.D2, span.D27, span.D28, span.D29, span.D3, span.D4, span.D5, span.D6, span.D8, span.G2, span.H1, span.I1, span.L101, span.L12, span.L20, span.L29, span.L4, span.L43, span.L52, span.L57, span.L78, span.L87, span.L88, span.L89, span.R13, span.R14, span.R30, span.R6, span.S10, span.S11, span.S5, span.V14, span.W3, span.W4, span.W7, span.f2, span.g1, span.z1, span.z10, span.z2, span.z7, span.z9{
+.wiring_table span.A15, span.A18, span.A2, span.A28, span.A29, span.A30, span.A32, span.A34, span.A35, span.A53, span.A54, span.A55, span.A57, span.D1, span.D10, span.D11, span.D12, span.D13, span.D14, span.D16, span.D18, span.D2, span.D27, span.D28, span.D29, span.D3, span.D4, span.D5, span.D6, span.D8, span.G2, span.H1, span.I1, span.L101, span.L12, span.L20, span.L29, span.L4, span.L43, span.L52, span.L57, span.L78, span.L87, span.L88, span.L89, span.R13, span.R14, span.R30, span.R6, span.S10, span.S11, span.S5, span.V14, span.W3, span.W4, span.W7, span.f2, span.g1, span.z1, span.z10, span.z2, span.z7, span.z9{
   font-family: Geneva, Verdana, sans-serif;
   color: #000000;
   text-shadow: 0px 1px 2px #000000, 0px 0px 1px #000000;
@@ -544,7 +924,7 @@ span.A15, span.A18, span.A2, span.A28, span.A29, span.A30, span.A32, span.A34, s
   font-weight: bold;
   border: 2px solid #000000;
   padding: 1px;
-} .wiring_table 
+}  
 
 
 
