@@ -322,10 +322,4 @@ ul.component-list li::before {
   object-fit: cover;
 }
 
-/* ---------- Responsive Adjustments ---------- */
-@media (max-width: 480px) {
-  body { font-size: 0.95rem; }
-}
-@media (min-width: 1200px) {
-  body { font-size: 1.1rem; }
 }
