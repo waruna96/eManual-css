@@ -3,6 +3,8 @@ html {
   font-size: clamp(14px, 1.2vw, 17px);
 }
 
+/*
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -13,7 +15,7 @@ body {
   background: linear-gradient(180deg, #f9f9f9 0%, #eaeaea 100%);
   font-size: 1rem;
   box-sizing: border-box;
-}
+}*/
 
 /*
 body {
