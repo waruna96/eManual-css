@@ -99,6 +99,7 @@ h3.headder_3 {
 }
 
 /* ================== TABLES ================== */
+/*
 table {
   width: 100%;
   border-collapse: collapse;
@@ -123,7 +124,7 @@ tr:nth-child(even) {
 @media (max-width: 600px) {
   table { font-size: 14px; }
   th, td { padding: 8px; }
-}
+}*/
 
 /* ================== IMAGE SECTION ================== */
 .ecu-image {
