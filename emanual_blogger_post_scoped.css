@@ -1,3 +1,14 @@
+
+
+.sidebar-container, .drawer {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
 /* ================== GLOBAL STYLES ================== */
 
 /*
