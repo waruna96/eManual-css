@@ -93,7 +93,7 @@ img {
 }
 
 /* --- Custom Header Variants --- */
-h1.headder_1, span.headder_1 {
+h1.headder_11, span.headder_1 {
   font-family: Garamond, serif;
   color: #000;
   text-align: center;
@@ -102,7 +102,7 @@ h1.headder_1, span.headder_1 {
   line-height: 1.3;
 }
 
-h2.headder_2, .headder_2 {
+h2.headder_22, .headder_2 {
   font-family: Garamond, serif;
   color: #000;
   background-color: lightgray;
@@ -111,7 +111,7 @@ h2.headder_2, .headder_2 {
   line-height: 1.35;
 }
 
-h3.headder_3 {
+h3.headder_33 {
   font-family: "Lucida Console", "Courier New", monospace;
   color: #000;
   border-left: 10px solid red;
