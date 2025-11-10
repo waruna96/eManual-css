@@ -70,7 +70,7 @@ img {
 
 
 
-.post-body h1 {
+.ppost-body h1 {
   color: #d32f2f;
   border-bottom: 2px solid #d32f2f;
   padding-bottom: 10px;
@@ -79,7 +79,7 @@ img {
 }
 
 
-.post-body h2 {
+.ppost-body h2 {
   color: #1976d2;
   margin-top: 30px;
   font-size: clamp(1.4rem, 2vw, 2rem);
