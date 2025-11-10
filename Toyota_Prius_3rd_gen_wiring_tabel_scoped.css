@@ -194,10 +194,13 @@
   table.O3_Connection, table.R4_Connection, table.R23_Connection, table.b1_Connection,
   table.z5_Connection, table.z6_Connection, table.z11_Connection,
   table.z14_Connection, table.z15_Connection {
-    border: 2px solid #EDEADE;
-    background-color: #D9D9D9;
-    color: #EDEADE;            /* */
-  font-weight: 600;
+    border: 2px solid #F9F6EE;
+    background-color: #FFFFFF;
+    
+    font-family: Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #000000, 2px 2px 5px #000000;
     
   }
 
@@ -213,8 +216,9 @@
   table.L7_Connection td, table.L7_Connection th,
   table.L8_Connection td, table.L8_Connection th,
   table.L17_Connection td, table.L17_Connection th,
-  table.L18_Connection td, table.L18_Connection th {
-    border: 2px solid #EDEADE;
+  table.L18_Connection td, table.L18_Connection th,
+  table.L47_Connection td, table.L47_Connection th {
+    border: 2px solid #F9F6EE;
     
   }
 }
