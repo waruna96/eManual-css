@@ -1,186 +1,380 @@
-/* ======================================================
-   emanual_blogger_post_scoped — cleaned, reorganized
-   Source: user upload emanual_blogger_post_scoped v1.css
-   (preserved look & behavior; grouped and deduped)
-   ====================================================== */
-
-/* -------------------------
-   Theme variables (edit here)
-   ------------------------- */
-:root{
-  /* primary palette */
-  --toyota-blue: #003087;
-  --toyota-accent: #2196f3;
-  --primary-red: #d32f2f;
-  --accent-amber: #ffc107;
-  --muted-text: #555;
-  --muted-bg: #fafafa;
-  --surface: #fff;
-  --shadow: 0 2px 10px rgba(0,0,0,0.08);
-
-  /* spacing & typographic */
-  --max-width: 900px;
-  --gutter: 10px;
-  --radius: 8px;
-  --base-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  --fz-base: 1rem;
+/* =========================================================
+   GLOBAL IMAGE STYLE
+========================================================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-/* -------------------------
-   Global reset / images
-   ------------------------- */
-*{box-sizing:border-box}
-img{max-width:100%;height:auto;display:block;margin:20px auto;border:1px solid #ddd;box-shadow:0 2px 3px rgba(0,0,0,.1)}
+/* =========================================================
+   LAYOUT CONTAINERS
+========================================================= */
+.post-body div,
+.dtc_post div {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
 
-.post-body,
-.dtc_post,
-.dtc_table,
-.main_view,
-.intro { width:100%; max-width:var(--max-width); margin:0 auto; padding:0 var(--gutter); font-family:var(--base-font); }
-
-/* -------------------------
-   Typography / headings
-   ------------------------- */
+/* =========================================================
+   HEADINGS
+========================================================= */
 .post-body h1,
-.dtc_post h1{
-  color:var(--primary-red);
-  border-bottom:2px solid var(--primary-red);
-  padding-bottom:10px;
-  font-size:clamp(1.8rem,2.5vw,2.6rem);
-  line-height:1.3;
+.dtc_post h1 {
+  color: #d32f2f;
+  border-bottom: 2px solid #d32f2f;
+  padding-bottom: 10px;
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+  line-height: 1.3;
 }
+
 .post-body h2,
 .dtc_post h2,
-h2 { color:var(--toyota-accent); margin-top:30px; font-size:clamp(1.4rem,2vw,2rem); line-height:1.35; }
+h2 {
+  color: #1976d2;
+  margin-top: 30px;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  line-height: 1.35;
+}
+
 .post-body h3,
-.dtc_post h3 { font-size:clamp(1.2rem,1.8vw,1.6rem); line-height:1.4; }
-
-/* Custom header variants */
-h1.headder_1, span.headder_1{ font-family:Garamond,serif; color:#000; background:#f5f5f5; text-shadow:0 1px 2px #000,0 0 2px #4b0082; text-align:center; line-height:1.3; }
-h2.headder_2, .headder_2{ font-family:Garamond,serif; color:#000; background:lightgray; border-left:10px solid red; border-bottom:1px solid red; line-height:1.35; }
-h3.headder_3{ font-family:"Lucida Console","Courier New",monospace; color:#000; border-left:10px solid red; line-height:1.4; }
-
-/* -------------------------
-   Utility blocks: intro / notes / tips
-   ------------------------- */
-.intro div{ width:90%; margin:0 auto; }
-.intro p{ color:#28282B; font-weight:500; }
-.intro strong{ color:#000; font-weight:700; text-transform:uppercase; margin-right:6px; display:inline-block; }
-
-.what-is,
-.note,
-.tip {
-  border-radius:6px;
-  padding:12px 16px;
-  margin:12px 0;
-  line-height:1.5;
-  box-shadow:0 2px 6px rgba(0,0,0,0.08);
-  font-size:clamp(.95rem,1.1vw,1.05rem);
-}
-.what-is{ background:#fff8e1; border-left:4px solid var(--accent-amber); color:var(--muted-text); }
-.what-is strong{ color:#c00; font-weight:700; text-transform:uppercase; display:inline-block; margin-right:6px; }
-.what-is span{ color:#36454F; font-weight:500; }
-
-.note{ background:#fff8e1; border-left:4px solid #ffb300; color:#6a4f00; font-size:14.5px; border-radius:6px; }
-.tip{ background:#f0f9ff; border-left:5px solid #0ea5e9; border-radius:8px; }
-.tip strong{ color:#0369a1; font-size:15px; }
-.tip p{ margin:0; font-size:14px; }
-
-/* -------------------------
-   Component list styles
-   ------------------------- */
-ul.component-list{ list-style:none; padding-left:20px; }
-ul.component-list li{ margin:10px 0; padding-left:10px; position:relative; line-height:1.5; }
-ul.component-list li::before{ content:""; width:10px; height:10px; background:var(--primary-red); border-radius:50%; position:absolute; left:0; top:6px; }
-.component-list .component-name{ color:#4A0404; padding:2px 6px; border-radius:4px; font-weight:600; }
-.desc-text{ color:#444; font-size:15px; line-height:1.6; }
-
-/* -------------------------
-   Custom ordered list numbering
-   ------------------------- */
-ol.custom-numbering{ counter-reset:section; list-style:none; padding:0; }
-ol.custom-numbering>li{ counter-increment:section; margin-bottom:20px; }
-ol.custom-numbering>li::before{
-  content:counter(section);
-  background:var(--toyota-accent);
-  color:#fff;
-  font-weight:700;
-  border-radius:50%;
-  width:28px;height:28px;display:inline-block;text-align:center;line-height:28px;margin-right:8px;
+.dtc_post h3 {
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  line-height: 1.4;
 }
 
-/* -------------------------
-   Gallery / slides
-   ------------------------- */
-.gallery-container{ position:relative; max-width:650px; margin:40px auto; background:var(--surface); border-radius:12px; box-shadow:var(--shadow); overflow:hidden; transition:box-shadow .3s ease; }
-.gallery-container:hover{ box-shadow:0 6px 20px rgba(0,0,0,.2); }
-.gallery-slide{ display:none; animation:fadeIn .6s ease-in-out; }
-.gallery-slide img{ width:100%; height:420px; object-fit:contain; border-radius:8px; background-color:#f0f0f0; }
-.caption{ text-align:center; font-size:15px; color:#444; font-style:italic; padding:8px; background:#fafafa; border-top:1px solid #e0e0e0; border-radius:0 0 12px 12px; opacity:0; animation:fadeCaption 1s forwards; }
-.prev,.next{ cursor:pointer; position:absolute; top:50%; padding:12px; font-weight:bold; font-size:20px; border-radius:50%; background:rgba(0,0,0,.5); color:#fff; user-select:none; transform:translateY(-50%); transition:all .3s; }
-.prev:hover,.next:hover{ background:var(--toyota-accent); transform:translateY(-50%) scale(1.1); }
-.prev{ left:15px } .next{ right:15px }
+/* --- Custom Header Variants --- */
+h1.headder_1, span.headder_1 {
+  font-family: Garamond, serif;
+  color: #000;
+  text-align: center;
+  background: #f5f5f5;
+  text-shadow: 0 1px 2px #000, 0 0 2px #4b0082;
+}
 
-/* Thumbs */
-.thumb-row{ display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin:15px 0; }
-.thumb-row img{ width:90px; height:65px; object-fit:cover; opacity:.7; cursor:pointer; border-radius:8px; border:2px solid transparent; transition:all .3s ease-in-out; box-shadow:0 0 4px rgba(0,0,0,.1); }
-.thumb-row img.active, .thumb-row img:hover{ opacity:1; border:2px solid var(--toyota-accent); box-shadow:0 0 10px rgba(33,150,243,.4); transform:scale(1.05); }
+h2.headder_2, .headder_2 {
+  font-family: Garamond, serif;
+  color: #000;
+  background: lightgray;
+  border-left: 10px solid red;
+  border-bottom: 1px solid red;
+}
+
+h3.headder_3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-left: 10px solid red;
+}
+
+/* =========================================================
+   INFO BLOCKS (.what-is, .intro)
+========================================================= */
+.what-is {
+  background: #fff8e1;
+  border-left: 4px solid #ffc107;
+  padding: 15px 18px;
+  margin: 20px 0;
+  font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  color: #555;
+}
+
+.what-is strong {
+  color: #c00;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+
+.what-is span {
+  color: #36454F;
+  font-weight: 500;
+}
+
+.intro div { width: 90%; margin: 0 auto; }
+.intro p { color: #28282B; font-weight: 500; }
+.intro strong { color: #000; font-weight: 700; text-transform: uppercase; }
+
+/* =========================================================
+   ECU IMAGE BLOCK
+========================================================= */
+.ecu-image {
+  text-align: center;
+  margin: 1em 0;
+}
+.ecu-image img { margin: 0 auto; }
+.ecu-image figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.5em;
+}
+
+/* =========================================================
+   GALLERY
+========================================================= */
+.gallery-container {
+  position: relative;
+  max-width: 650px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.gallery-container:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+.part-title {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  color: #222;
+}
+.part-title .code { color: #d32f2f; font-weight: 800; }
+
+.gallery-slide { display: none; animation: fadeIn 0.6s ease-in-out; }
+.gallery-slide img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f0f0f0;
+}
+
+.caption {
+  text-align: center;
+  font-size: 15px;
+  color: #d32f2f;
+  font-style: italic;
+  padding: 8px;
+  background: #fafafa;
+  border-top: 1px solid #e0e0e0;
+  border-radius: 0 0 12px 12px;
+  opacity: 0;
+  animation: fadeCaption 1s forwards;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 12px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+.prev:hover, .next:hover {
+  background: #2196f3;
+  transform: scale(1.1);
+}
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* Thumbnails */
+.thumb-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+.thumb-row img {
+  width: 90px;
+  height: 65px;
+  object-fit: cover;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+.thumb-row img.active,
+.thumb-row img:hover {
+  opacity: 1;
+  border: 2px solid #2196f3;
+  box-shadow: 0 0 10px rgba(33,150,243,0.4);
+  transform: scale(1.05);
+}
 
 /* Animations */
-@keyframes fadeIn { from{opacity:0;transform:scale(.98)} to{opacity:1;transform:scale(1)} }
-@keyframes fadeCaption { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
-
-/* -------------------------
-   Testimonial / quote
-   ------------------------- */
-.testimonial blockquote{
-  margin:1px 30px 0; padding:10px 20px; background:#efefef; border-radius:8px; font-family:monospace; font-weight:700; color:#ff0000; position:relative; line-height:1.5;
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to   { opacity: 1; transform: scale(1); }
 }
-.testimonial blockquote::before{ content:"“"; position:absolute; font-size:30px; color:#757f9a; top:0; left:0 }
-.testimonial blockquote::after{ content:"”"; position:absolute; font-size:30px; color:#757f9a; bottom:-.7em; right:auto }
-.testimonial div{ width:0;height:0;margin-left:60px;border-right:20px solid transparent;border-top:20px solid #efefef }
-
-/* -------------------------
-   Modern responsive DTC table (Toyota theme)
-   ------------------------- */
-.dtc_table{ width:100%; margin:0 auto; padding:0 var(--gutter); box-sizing:border-box; }
-.dtc_table.theme-toyota table{
-  width:100%;
-  background:var(--surface);
-  color:#000;
-  border-collapse:collapse;
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  overflow:hidden;
-}
-.dtc_table.theme-toyota thead th{ background:var(--toyota-blue); color:#fff; padding:12px; text-align:left; }
-.dtc_table.theme-toyota tbody td{ padding:12px; border-bottom:1px solid #e5e5e5; vertical-align:middle; }
-.dtc_table.theme-toyota tbody tr:nth-child(even){ background:#eef3ff; }
-.dtc_table.theme-toyota tbody tr:hover{ background:#d9e6ff; }
-
-/* table lists inside cells */
-.dtc_table ul{ margin:0; padding-left:18px; }
-.dtc_table li{ margin-bottom:4px }
-
-/* mobile improvements */
-@media (max-width:600px){
-  .dtc_table table, .dtc_table thead th, .dtc_table tbody td{ font-size:14px; padding:10px; }
+@keyframes fadeCaption {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-/* -------------------------
-   Misc / main view / back link
-   ------------------------- */
-.main_view{ width:100%; max-width:var(--max-width); height:auto; }
-.main_view img{ width:100%; height:100%; object-fit:cover; }
+/* =========================================================
+   CUSTOM LISTS
+========================================================= */
+ol.custom-numbering {
+  counter-reset: section;
+  list-style: none;
+  padding: 0;
+}
+ol.custom-numbering > li {
+  counter-increment: section;
+  margin-bottom: 20px;
+}
+ol.custom-numbering > li::before {
+  content: counter(section);
+  background: #0077b6;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  text-align: center;
+  line-height: 28px;
+  margin-right: 8px;
+}
 
-.back{ font-family:serif; font-weight:300; text-align:left; color:#9acd32; }
+.section-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #c62828;
+  border-left: 5px solid #c62828;
+  padding-left: 10px;
+  margin-bottom: 6px;
+}
 
-/* -------------------------
-   Small helpers
-   ------------------------- */
-.section-title{ font-weight:700; font-size:1.2em; color:var(--primary-red); border-left:5px solid var(--primary-red); padding-left:10px; margin-bottom:6px; display:inline-block; }
-.dtc_post h2, h2{ color:var(--toyota-accent); }
+ul.component-list { list-style: none; padding-left: 20px; }
+ul.component-list li {
+  margin: 10px 0;
+  padding-left: 10px;
+  position: relative;
+  line-height: 1.5;
+}
+ul.component-list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #d32f2f;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.component-name {
+  color: #4A0404;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
 
-/* -------------------------
-   End of file
-   ------------------------- */
+.desc-text { color: #444; font-size: 15px; line-height: 1.6; }
+
+/* =========================================================
+   QUOTES / TESTIMONIAL
+========================================================= */
+.testimonial blockquote {
+  margin: 1px 30px 0;
+  padding: 10px 20px;
+  background: #efefef;
+  border-radius: 8px;
+  font-family: monospace;
+  font-weight: 700;
+  color: #ff0000;
+  position: relative;
+}
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+  position: absolute;
+  font-size: 30px;
+  color: #757f9a;
+}
+.testimonial blockquote::before { content: "“"; top: 0; left: 0; }
+.testimonial blockquote::after { content: "”"; bottom: -0.7em; }
+.testimonial div {
+  width: 0;
+  height: 0;
+  margin-left: 60px;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #efefef;
+}
+
+.back {
+  font-family: serif;
+  font-weight: 300;
+  text-align: left;
+  color: #9acd32;
+}
+
+/* =========================================================
+   MAIN VIEW
+========================================================= */
+.main_view {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+.main_view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================================================
+   DTC TABLE
+========================================================= */
+.dtc_table.theme-toyota table {
+  background: #fff;
+  color: #000;
+  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.dtc_table.theme-toyota thead th {
+  background: #003087;
+  color: #fff;
+}
+
+.dtc_table.theme-toyota tbody tr:nth-child(even) { background: #eef3ff; }
+.dtc_table.theme-toyota tbody tr:hover { background: #d9e6ff; }
+.dtc_table.theme-toyota tbody td { border-bottom: 1px solid #e5e5e5; }
+
+.dtc_table ul { margin: 0; padding-left: 18px; }
+.dtc_table li { margin-bottom: 4px; }
+
+@media (max-width: 600px) {
+  .dtc_table table { font-size: 14px; }
+  .dtc_table td,
+  .dtc_table th { padding: 10px; }
+}
+
+/* =========================================================
+   TIP BOX
+========================================================= */
+.tip {
+  background: #f0f9ff;
+  border-left: 5px solid #0ea5e9;
+  padding: 12px 16px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.tip strong {
+  color: #0369a1;
+  font-size: 15px;
+}
+
+.tip p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
