@@ -217,7 +217,9 @@
   table.L8_Connection td, table.L8_Connection th,
   table.L17_Connection td, table.L17_Connection th,
   table.L18_Connection td, table.L18_Connection th,
-  table.L47_Connection td, table.L47_Connection th {
+  table.L27_Connection td, table.L27_Connection th,
+  table.L47_Connection td, table.L47_Connection th,
+  table.R4_Connection td, table.R4_Connection th {
     border: 2px solid #F9F6EE;
     
   }
